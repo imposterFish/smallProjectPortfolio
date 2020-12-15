@@ -1,5 +1,5 @@
 # Small Project Portfolio
-This is a portfolio of old CS projects. Currently my notes about the program(s) are comments on the commits.
+This is a portfolio of old CS projects. Read more about the programs in the program comments.
 
 | File Name                            | Use                                                | Date Started | Improved Later? | Class                           | Note                                     |
 | ------------------------------------ | -------------------------------------------------- | -----------: | :-------------: |-------------------------------- |------------------------------------------|
