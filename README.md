@@ -7,3 +7,4 @@ This is a portfolio of old CS projects. Read more about the programs in the prog
 | pythonStockReader.py                 | Reads stock data, prints date and price            | 12/2020      | No              | Personal                        | Need PANDAS library to run               |
 | 404.html                             | A simple 404 page, designed by me                  | 11/2020      | No              | Personal                        | HTML and CSS used                        |
 | anagram.c                            | Tests if strings are anagrams of eachother         | 7/8/2021     | No              | Personal                        | Compiles with gcc                        |
+| weather.sh                           | Reads off weather data                             | 6/2021       | No              | Personal                        | Needs API key to run (See comments)      |
