@@ -102,6 +102,36 @@ void fixCase(char *str) {
     }
 }
 
+/* This function only checks if the first string is an anagram of the second.
+ * This was created during the code review, and it has not been tested.
+ */
+bool isAnaSort2(char *spr1, char *spr2) {
+    // We are assuming that each word only consists of letters
+    int count1[26] = {0}; // This will be the letter count for spr1
+    int count2[26] = {0}; // Letter count for spr2
+
+    // At this point it was determined that modern compilers should not refuse to work if you declare a variable in a for loop.
+    // This for loop counts the amount of each letter in spr1
+    for (int x = 0; x<strlen(spr1); x++) {
+        count1['a' - spr1[x]] += 1; // The interviewer helped me out here, it tripped me up a bit at first, but I think it's cool.
+        // at position 'a'-spr1[x] we add 1 to the current value.
+        // position 'a' - spr1[x] should corespond to the correct letter's position. For example 'a' - 'a' = 0, 'a' - 'b' = 1.
+    }
+
+    // This for loop counts the amount of each letter in spr2. Works just like the previous for loop.
+    for (int x = 0; x<strlen(spr2; x++) {
+        count2['a' - spr2[x]] +=1;
+    }
+    
+    // The letter counts are now compared. 
+    for (int x = 0; x<26; x++) {
+        if(count1[x] > count2[x]) { // spr2 should have at least the same amount of each letter, compared to spr1.
+            return false; // Not enough characters in spr2 to create spr1. Not an anagram.
+        }
+    }
+    return true; // spr2 has enough of each letter to create spr1. spr1 is an anagram of spr2.
+}
+
 int main() {
     char str1[20]="";
     char str2[20]="";
